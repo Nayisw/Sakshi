@@ -1,0 +1,114 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Major+Mono+Display&family=Zeyada&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: "Zeyada", cursive;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.video-container {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  object-fit: cover;
+  z-index: 0;
+
+  
+  
+}
+
+main {
+    height: 800vh;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: aliceblue;
+    background-image: url(resources/TQ.mp4);
+
+    position: absolute;
+    top: 0; right: 0; left: 0; bottom: 0;
+    
+    background: rgba(0, 0, 0, 0.5);
+    animation: glow 1.8s infinite alternate  cubic-bezier(0.785, 0.135, 0.15, 0.86);   
+
+
+}
+
+.page {
+    height: 100vh;
+    width: 100%;
+}
+
+#hero {
+    font-size: 5vw;
+    margin-top: 20%;
+    color: rgb(253, 244, 255);
+    /* backdrop-filter: blur(3px); */
+    animation: glow 1.6s infinite alternate cubic-bezier(0.785, 0.135, 0.15, 0.86);   
+}
+@keyframes glow {
+    0% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+#text-container{
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    backdrop-filter: brightness(40%);
+    -webkit-backdrop-filter: brightness(40%);
+    padding: 10%;
+    margin-left: 20%;
+    margin-right: 20%;
+    box-sizing: border-box;
+}
+#text-container p{
+    color: white;
+    display: flex;
+    font-size: 2rem;
+}
+
+#hero-2 {
+    color: white;
+    font-size: 5rem;
+    margin-top: 30vh;
+}
+
+#page3 {
+    color:  white;
+}
+
+li {
+    font-size: 2.5rem;
+    color: rgb(255, 179, 179);
+}
+ul {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    padding: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: rgb(102, 81, 116);
+    border-radius: 20%;
+    list-style: square;
+}
+p {
+    font-family: "Indie Flower";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+}
